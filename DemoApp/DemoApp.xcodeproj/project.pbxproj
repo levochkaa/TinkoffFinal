@@ -12,6 +12,7 @@
 		DFD23B2D29F3DF2E0042EA58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD23B2C29F3DF2E0042EA58 /* ViewController.swift */; };
 		DFD23B3229F3DF2F0042EA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD23B3129F3DF2F0042EA58 /* Assets.xcassets */; };
 		DFD23B3529F3DF2F0042EA58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD23B3329F3DF2F0042EA58 /* LaunchScreen.storyboard */; };
+		DFD23B4229F3E45F0042EA58 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = DFD23B4129F3E45F0042EA58 /* DesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,6 @@
 		DFD23B3129F3DF2F0042EA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD23B3429F3DF2F0042EA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFD23B3629F3DF2F0042EA58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFD23B3C29F3E0A20042EA58 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD23B4229F3E45F0042EA58 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +40,6 @@
 		DFD23B1C29F3DF2E0042EA58 = {
 			isa = PBXGroup;
 			children = (
-				DFD23B3C29F3E0A20042EA58 /* DesignSystem */,
 				DFD23B2729F3DF2E0042EA58 /* DemoApp */,
 				DFD23B2629F3DF2E0042EA58 /* Products */,
 			);
@@ -82,6 +82,9 @@
 			dependencies = (
 			);
 			name = DemoApp;
+			packageProductDependencies = (
+				DFD23B4129F3E45F0042EA58 /* DesignSystem */,
+			);
 			productName = DemoApp;
 			productReference = DFD23B2529F3DF2E0042EA58 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +113,9 @@
 				Base,
 			);
 			mainGroup = DFD23B1C29F3DF2E0042EA58;
+			packageReferences = (
+				DFD23B4029F3E45F0042EA58 /* XCRemoteSwiftPackageReference "DesignSystem" */,
+			);
 			productRefGroup = DFD23B2629F3DF2E0042EA58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFD23B4029F3E45F0042EA58 /* XCRemoteSwiftPackageReference "DesignSystem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/lev/Developer/XCodeProjects/DesignSystem/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFD23B4129F3E45F0042EA58 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFD23B4029F3E45F0042EA58 /* XCRemoteSwiftPackageReference "DesignSystem" */;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFD23B1D29F3DF2E0042EA58 /* Project object */;
 }

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "designsystem",
+      "kind" : "localSourceControl",
+      "location" : "/Users/lev/Developer/XCodeProjects/DesignSystem",
+      "state" : {
+        "branch" : "main",
+        "revision" : "075539fa2027871b775932121f43ea39bd978163"
+      }
+    }
+  ],
+  "version" : 2
+}
